@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta charset="UTF-8">
+	<title>HTML Tables</title>
+	<style> 
+		table,th,td {
+			border:1px solid gray;      /* 두께, 모양, 색상 */
+			border-collapse:collapse;   /* 표 사이 공백 없애기 */
+		}
+		th,td{
+			font-size:12px;
+			padding:10px 20px;  /* top,botton : 10px, left,right : 20px */
+			/*padding:20px;   t r b l 20px */
+			/*padding-top:10px;	
+			padding-right:10px;
+			padding-bottom:10px;
+			padding-left:10px;*/
+		}
+		tr:nth-child(even) {
+ 		 background-color: #D6EEEE;
+		}
+	</style>
+
+</head>
+<body>
+	<h1>주소록</h1>
+	<table>
+		<tr>
+			<!-- <th>번호</th> -->
+			<th colspan=2>번호/성명</th> 
+			<th>연락처</th>
+			<th>주소</th>
+		</tr>
+		
+		<tr>
+			<td rowspan=2>1</td>
+			<td>홍길동</td>
+			<td>010-1111-2222</td>
+			<td>서울시 강남구</td>
+		</tr>
+		
+		<tr>
+			<!-- <td>2</td> -->
+			<td>홍길순</td>
+			<td>010-3333-4444</td>
+			<td>서울시 강동구</td>
+		</tr>
+		
+		<tr>
+			<td>2</td>
+			<td>홍길군</td>
+			<td>010-5555-6666</td>
+			<td>서울시 마포구</td>
+		</tr>
+	</table>
+	
+</body>
+</html>
