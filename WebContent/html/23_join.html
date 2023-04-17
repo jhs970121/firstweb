@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>회원가입 폼</title>
+</head>
+<body>
+	<h1>회원가입</h1>
+	<form action="#" method="get">
+	<ul>
+		<li>
+			<lable>아이디</lable>
+			<input type="text" name="id" placeholder="8자 이상 영문으로 입력해주세요">
+			<button type="button">중복확인</button>
+		</li>
+		<li>
+			<lable>비밀번호</lable>
+			<input type="password" name="pass">
+		</li>
+		<li>
+			<lable>비밀번호 확인</lable>
+			<input type="password" name="cpass">
+		</li>
+		<li>
+			<lable>성명</lable>
+			<input type="text" name="name">
+		</li>
+		<li>
+			<lable>성별</lable>
+			<input type="radio" name="gender" value="남자">남자
+			<input type="radio" name="gender" value="여자">여자
+		</li>
+		<li>
+			<lable>이메일</lable>
+			<input type="text" name="email1"> @
+			<input type="text" name="email2">
+			<select name="choice">
+				<option value="default">선택</option>
+				<option value="naver.com">네이버</option>
+				<option value="google.com">구글</option>
+				<option value="daum.net">다음</option>
+				<option value="korea.com">코리아</option>
+			</select>
+		</li>
+		<li>
+			<lable>주소</lable>
+			<input type="text" name="addr1">
+			<button>주소찾기</button>
+		</li>
+		<li>
+			<lable>상세주소</lable>
+			<input type="text" name="addr2">
+		</li>
+		<li>
+			<lable>휴대폰</lable>
+			<input type="radio" name="tel" value="skt">SKT
+			<input type="radio" name="tel" value="lg">LG
+			<input type="radio" name="tel" value="kt">KT
+			<select name="phone1">
+				<option value="default">선택</option>
+				<option value="010">010</option>
+				<option value="011">011</option>
+				<option value="017">017</option>
+			</select>
+			- <input type="text" name="phone2">
+			- <input type="text" name="phone3">
+		</li>
+		<li>
+			<lable>취미</lable>
+			<input type="checkbox" name="hobby" value="영화보기">영화 보기
+			<input type="checkbox" name="hobby" value="등산하기">등산하기
+			<input type="checkbox" name="hobby" value="게임하기">게임하기
+			<input type="checkbox" name="hobby" value="잠자기">잠자기
+		</li>
+		<li>
+			<lable>자기소개</lable>
+			<textarea rows="5" cols="50" name ="intro" placeholder="*200자 이내로 작성해주세요"></textarea>
+		</li>
+		<li>
+		<button type="submit">가입하기</button>
+		<button type="reset">다시입력</button>
+		</li>
+	</ul>
+	</form>
+</body>
+</html>
