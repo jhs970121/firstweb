@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>CSS - Forms</title>
+	<style>
+		ul {
+			border:1px solid red;
+			list-style-type:none;
+			margin:0px; padding:0px;
+			width:500px;
+		}
+		label {
+			display:inline-block;
+			width:100px;
+			padding:3px 0px;
+			text-align:center;
+			font-size:15px;
+			background:tomato;
+			color:white;
+			border-radius:5px;
+			margin-right:5px;
+		}
+		input {
+			border:1px solid lightgray;
+			border-radius:5px;
+			padding:4px 5px;
+			width:50%;
+			vertical-align:top;
+			text-indent:10px;
+			outline:none;
+		}
+		input:focus {
+			border-color:tomato;
+		}
+		ul li {
+			margin:3px 0px;
+			text-align:center;
+		}
+		li:first-child, li:last-child {
+			margin-top:10px;
+		}
+		button {
+			width:100px;
+			padding:5px;
+			font-size:12px;
+			background:mediumseagreen;
+			color:white;
+			border-radius:5px;
+			border:1px double lightgray;
+			cursor:pointer;
+		}
+		button:first-child {
+			margin-left:30px;
+		}
+	</style>
+</head>
+<body>
+	<h1>Login Form</h1>
+	<form name="loginForm" action="#" method="get">
+		<ul>
+			<li>
+				<label>ID</label>
+				<input type="text" name="id">
+			</li>
+			<li>
+				<label>Password</label>
+				<input type="password" name="pass">
+			</li>
+			<li>
+				<button type="button">Login</button> <!-- 유호성 체크를 하기위해 타입은 button -->
+				<button type="reset">Cancle</button>
+			</li>
+		</ul>
+	</form>
+</body>
+</html>
