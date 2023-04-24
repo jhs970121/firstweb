@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Insert title here</title>
+	<style>
+		ul {
+			background:#f1f1f1;
+			list-style-type:none;
+			padding:0px;
+			margin:0px;
+			width:350px;
+			height:600px;
+			float:left;
+		}
+		ul > li > a {
+			display:block;
+			text-decoration:none;
+			padding:15px 15px;
+			color:#000;
+			font-size:18px;
+			
+		}
+		ul > li:first-child > a{
+			background:mediumseagreen;
+			color:white;
+		}
+		ul > li > a:hover:not(.active) {
+			background:#555;
+			color:white;
+			cursor:pointer;
+		}
+		div.content {
+			background:powderblue;
+			height:600px;
+		}
+		
+	</style>
+</head>
+<body>
+	<h1>Vertical</h1>
+	<ul> <!-- left menu -->
+		<li><a href="#" class="active">Home</a></li>
+		<li><a href="#">News</a></li>
+		<li><a href="#">Contact</a></li>
+		<li><a href="#">About</a></li>
+	</ul>
+	<div class="content"> <!-- content -->
+		<p>Vertical menu - Home</p>
+	</div>
+</body>
+</html>
