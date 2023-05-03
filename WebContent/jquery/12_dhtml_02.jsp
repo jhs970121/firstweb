@@ -15,9 +15,7 @@
 						  		 ]
 						 };
 		let code = "<table><tr><th>번호</th><th>성명</th><th>주소</th><th>나이</th></tr>";
-		/* code += "<tr><th>"+count+"</th><th>"+person.name+"</th><th>"+person.addr+"</th><th>"+person.age+"</th></tr>"; */
-		/* for(i = 0; i < employee.length; i++){ */
-		/* } */
+		
 		 for(index in employee.list){
 			let no = parseInt(index) + 1;
 			code += "<tr>";
