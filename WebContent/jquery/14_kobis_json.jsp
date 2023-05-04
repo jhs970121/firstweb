@@ -6,14 +6,13 @@
 <meta charset="UTF-8">
 <title>Insert title here</title>
 <script src="http://localhost:9000/jhs_web_project/jquery/jquery-3.6.4.min.js"></script>
-<script src="kobis_json.js"></script>
+<script src="kobis_getjson.js"></script>
 <style>
-	table, th, td {
+	table, th, td, tr {
 		border:1px solid gray;
 	}
 </style>
 </head>
 <body>
-
 </body>
 </html>
